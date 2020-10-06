@@ -1,0 +1,457 @@
+
+
+
+<html>
+
+    <head>
+    
+    
+        <title>Our Menu JavaScript</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <!--  <link rel="stylesheet" href="reviews.css"> 
+       <script src="reviews.js"></script>  --> 
+       <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@700&display=swap" rel="stylesheet">
+        <script src="https://use.fontawesome.com/031e3862f6.js"></script>
+
+        <style>
+            *{
+                box-sizing: border-box;
+            }
+            #content{
+
+                width:80vw;
+                margin: auto;
+                text-align: center;
+                margin-top: 40px;
+
+            }
+            #content h1{
+
+
+                color:#102A42;
+                letter-spacing: 4px;
+                font-family: 'Roboto', sans-serif;
+                font-size: 50px;
+                padding-bottom: 0;
+                margin-bottom: 0;
+                
+
+
+            }
+            #underline{
+                padding: 0;
+                margin: 0;
+                border:2px solid #C69D5F;
+                text-align: center;
+                width: 110px;
+                margin: auto;
+                margin-bottom: 30px;
+                
+            }
+            #button_container button{
+
+
+                padding: 8px;
+                font-size: 16px;
+                color:#C69D5F;
+                background: rgba(255,255,255,0);
+              
+                border: none;
+                margin: 6px;
+                border: 3px solid #C69D5F;
+                border-style: outset;
+                border-radius: 10px;
+                cursor: pointer;
+                transition: background-color 1s;
+
+
+            }
+
+            #button_container button:hover{
+
+                background-color: #C69D5F;
+                color:white;
+
+
+            }
+
+
+
+
+            body{
+                background-color: #F1F5F8;
+            }
+
+            #grid_container{
+
+                display: grid;
+                grid-template-columns: 50% 50%;
+                margin-top: 40px;
+                grid-column-gap: 20px;
+                grid-row-gap: 30px;
+
+            }
+            .item{
+
+                display: flex;
+            }
+            .img_div{
+                flex:40%;
+             
+            }
+            .details{
+                flex:60%;
+                padding-left: 20px;
+            }
+            .food_img{
+                height: 10vw;
+                width:100%;
+                object-fit: cover;
+               
+                border:4px solid #C69D5F;
+                border-radius: 20px;
+            }
+
+            .price{
+
+                color:#C69D5F;
+                float:right;
+                
+
+            }
+            .details h3{
+
+                color:#102A42;
+                letter-spacing: 3px;
+                padding: 0;
+                margin: 0;
+                text-align: left;
+                padding-bottom: 3px;
+
+
+            }
+            .food_underline{
+                clear:both;
+                border:1px solid #617D98;
+                border-style: dotted;
+            }
+            .food_ingredients{
+               
+                color:#617D98;
+                text-align: left;
+                font-size: 20px;
+            }
+
+            @media only screen and (max-width:700px){
+
+                #content{
+                    width: 90vw;
+                }
+
+                #grid_container{
+
+                    grid-template-columns: 90%;
+                   
+                }
+                .item{
+
+               flex-direction: column;
+               padding: 10px;
+               
+                }
+                .food_img{
+                    height: 40vw;
+                }
+                .details{
+                    padding-top: 10px;
+                }
+
+
+            }
+
+           
+        </style>
+        
+    
+        
+    </head>
+
+
+    <body>
+        
+        <div id="content">
+
+            <h1>Our Menu</h1>
+            <div id="underline"></div>
+
+            <div id="button_container">
+
+                <button id="all_btn">All</button>
+
+                <button id="breakfast_btn">Breakfast</button>
+
+                <button id="lunch_btn">Lunch</button>
+
+                <button id="shakes_btn">Shakes</button>
+
+                <button id="dinner_btn">Dinner</button>
+
+
+            </div>
+
+            <div id="grid_container">
+
+                <div class="item breakfast">
+                    <div class="img_div"><img class="food_img" src="https://vanilla-js-basic-project-8-menu.netlify.app/images/item-1.jpeg"></div>
+                    <div class="details">
+                        <h3>Buttermilk Pancakes <span class="price">$15.99</span></h3>
+                        <div class="food_underline"></div>
+                        <p class="food_ingredients">I'm baby woke mlkshk wolf bitters live-edge blue bottle, hammock freegan copper mug whatever cold-pressed</p>
+
+
+                    </div>
+
+                </div>
+
+                <div class="item lunch">
+                    <div class="img_div"><img class="food_img" src="https://vanilla-js-basic-project-8-menu.netlify.app/images/item-2.jpeg"></div>
+                    <div class="details">
+                        <h3>Diner Double  <span class="price">$15.99</span></h3>
+                        <div class="food_underline"></div>
+                        <p class="food_ingredients">vaporware iPhone mumblecore selvage raw denim slow-carb leggings gochujang helvetica man braid jianbing. Marfa thundercats</p>
+
+
+                    </div>
+
+                </div>
+
+                <div class="item shakes">
+                    <div class="img_div"><img  class="food_img" src="https://vanilla-js-basic-project-8-menu.netlify.app/images/item-3.jpeg"></div>
+                    <div class="details">
+                        <h3>Godzilla Milkshake <span class="price">$6.99</span></h3>
+                        <div class="food_underline"></div>
+                        <p class="food_ingredients">ombucha chillwave fanny pack 3 wolf moon street art photo booth before they sold out organic viral.</p>
+
+
+                    </div>
+
+                </div>
+
+                <div class="item breakfast">
+                    <div class="img_div"><img  class="food_img" src="https://vanilla-js-basic-project-8-menu.netlify.app/images/item-4.jpeg"></div>
+                    <div class="details">
+                        <h3>Country Delight<span class="price">$20.99</span></h3>
+                        <div class="food_underline"></div>
+                        <p class="food_ingredients">Shabby chic keffiyeh neutra snackwave pork belly shoreditch. Prism austin mlkshk truffaut,</p>
+
+
+                    </div>
+
+                </div>
+                <div class="item lunch">
+                    <div class="img_div"><img  class="food_img" src="https://vanilla-js-basic-project-8-menu.netlify.app/images/item-5.jpeg"></div>
+                    <div class="details">
+                        <h3>Egg Attack<span class="price">$22.99</span></h3>
+                        <div class="food_underline"></div>
+                        <p class="food_ingredients">franzen vegan pabst bicycle rights kickstarter pinterest meditation farm-to-table 90's pop-up</p>
+
+
+                    </div>
+
+                </div>
+
+                <div class="item shakes">
+                    <div class="img_div"><img  class="food_img" src="https://vanilla-js-basic-project-8-menu.netlify.app/images/item-6.jpeg"></div>
+                    <div class="details">
+                        <h3>Oreo Dream<span class="price">$18.99</span></h3>
+                        <div class="food_underline"></div>
+                        <p class="food_ingredients">Portland chicharrones ethical edison bulb, palo santo craft beer chia heirloom iPhone everyday</p>
+
+
+                    </div>
+
+                </div>
+
+                <div class="item breakfast">
+                    <div class="img_div"><img  class="food_img" src="https://vanilla-js-basic-project-8-menu.netlify.app/images/item-7.jpeg"></div>
+                    <div class="details">
+                        <h3>Bacon Overflow<span class="price">$8.99</span></h3>
+                        <div class="food_underline"></div>
+                        <p class="food_ingredients">carry jianbing normcore freegan. Viral single-origin coffee live-edge, pork belly cloud bread iceland put a bird</p>
+
+
+                    </div>
+
+                </div>
+
+                <div class="item lunch">
+                    <div class="img_div"><img  class="food_img" src="https://vanilla-js-basic-project-8-menu.netlify.app/images/item-8.jpeg"></div>
+                    <div class="details">
+                        <h3>American Classic<span class="price">$12.99</span></h3>
+                        <div class="food_underline"></div>
+                        <p class="food_ingredients">on it tumblr kickstarter thundercats migas everyday carry squid palo santo leggings. Food truck truffaut</p>
+
+
+                    </div>
+
+                </div>
+
+                <div class="item shakes">
+                    <div class="img_div"><img  class="food_img" src="https://vanilla-js-basic-project-8-menu.netlify.app/images/item-9.jpeg"></div>
+                    <div class="details">
+                        <h3>Quarantine Buddy<span class="price">$16.99</span></h3>
+                        <div class="food_underline"></div>
+                        <p class="food_ingredients">skateboard fam synth authentic semiotics. Live-edge lyft af, edison bulb yuccie crucifix microdosing.</p>
+
+
+                    </div>
+
+                </div>
+
+                <div class="item dinner">
+                    <div class="img_div"><img  class="food_img" src="https://vanilla-js-basic-project-8-menu.netlify.app/images/item-10.jpeg"></div>
+                    <div class="details">
+                        <h3>Steak Dinner<span class="price">$39.99</span></h3>
+                        <div class="food_underline"></div>
+                        <p class="food_ingredients">skateboard fam synth authentic semiotics. Live-edge lyft af, edison bulb yuccie crucifix microdosing.</p>
+
+
+                    </div>
+
+                </div>
+
+
+
+
+
+
+            </div>
+
+
+
+
+        </div>
+
+        <script>
+
+                window.onload = function(){
+
+                     let btns =   document.querySelectorAll("button");
+                    btns.forEach(element => {
+                        return element.addEventListener("click",myFunc)
+                    });
+
+                    function myFunc(){
+
+                        if(this.id == "breakfast_btn"){
+
+                           var items = document.querySelectorAll(".item");
+                           items.forEach(function(elm){
+
+                                if(elm.classList.contains("breakfast")){
+
+                                    elm.style.display=""
+                                    
+                                }else{
+
+                                    elm.style.display="none"
+
+                                }
+
+
+                           })
+
+
+                        }
+
+                        if(this.id == "lunch_btn"){
+
+                        var items = document.querySelectorAll(".item");
+                           items.forEach(function(elm){
+
+                                if(elm.classList.contains("lunch")){
+
+                                    elm.style.display ="flex";
+                                    
+                                }else{
+                                    elm.style.display ="none";
+                                }
+
+
+                           })
+
+
+                        }   
+                        if(this.id == "shakes_btn"){
+
+                           var items = document.querySelectorAll(".item");
+                            items.forEach(function(elm){
+
+                                if(elm.classList.contains("shakes")){
+
+                                    elm.style.display ="flex";
+                                    
+                                }else{
+                                    elm.style.display ="none";
+                                }
+
+
+                            })
+
+
+                            }
+
+                            if(this.id == "dinner_btn"){
+
+                               var items = document.querySelectorAll(".item");
+                                items.forEach(function(elm){
+
+                                    if(elm.classList.contains("dinner")){
+
+                                        elm.style.display ="flex";
+                                        
+                                    }else{
+                                        elm.style.display ="none";
+
+                                    }
+
+
+                                })
+
+
+                                }
+                                if(this.id == "all_btn"){
+
+                                    var items = document.querySelectorAll(".item");
+                                    items.forEach(function(elm){
+
+                                        
+
+                                        elm.style.display ="flex";
+                                            
+                                        
+
+
+                                    })
+
+
+                                    }
+
+
+
+
+
+                    }
+
+                }
+
+
+
+
+        </script>
+        
+   
+    </body>
+
+
+</html>
