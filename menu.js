@@ -15,7 +15,7 @@
 
                                if(elm.classList.contains("breakfast")){
 
-                                   elm.style.display=""
+                                   elm.style.display="flex"
                                    
                                }else{
 
