@@ -1,0 +1,154 @@
+*{
+    box-sizing: border-box;
+}
+#content{
+
+    width:80vw;
+    margin: auto;
+    text-align: center;
+    margin-top: 40px;
+
+}
+#content h1{
+
+
+    color:#102A42;
+    letter-spacing: 4px;
+    font-family: 'Roboto', sans-serif;
+    font-size: 50px;
+    padding-bottom: 0;
+    margin-bottom: 0;
+    
+
+
+}
+#underline{
+    padding: 0;
+    margin: 0;
+    border:2px solid #C69D5F;
+    text-align: center;
+    width: 110px;
+    margin: auto;
+    margin-bottom: 30px;
+    
+}
+#button_container button{
+
+
+    padding: 8px;
+    font-size: 16px;
+    color:#C69D5F;
+    background: rgba(255,255,255,0);
+  
+    border: none;
+    margin: 6px;
+    border: 3px solid #C69D5F;
+    border-style: outset;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: background-color 1s;
+
+
+}
+
+#button_container button:hover{
+
+    background-color: #C69D5F;
+    color:white;
+
+
+}
+
+
+
+
+body{
+    background-color: #F1F5F8;
+}
+
+#grid_container{
+
+    display: grid;
+    grid-template-columns: 50% 50%;
+    margin-top: 40px;
+    grid-column-gap: 20px;
+    grid-row-gap: 30px;
+
+}
+.item{
+
+    display: flex;
+}
+.img_div{
+    flex:40%;
+ 
+}
+.details{
+    flex:60%;
+    padding-left: 20px;
+}
+.food_img{
+    height: 10vw;
+    width:100%;
+    object-fit: cover;
+   
+    border:4px solid #C69D5F;
+    border-radius: 20px;
+}
+
+.price{
+
+    color:#C69D5F;
+    float:right;
+    
+
+}
+.details h3{
+
+    color:#102A42;
+    letter-spacing: 3px;
+    padding: 0;
+    margin: 0;
+    text-align: left;
+    padding-bottom: 3px;
+
+
+}
+.food_underline{
+    clear:both;
+    border:1px solid #617D98;
+    border-style: dotted;
+}
+.food_ingredients{
+   
+    color:#617D98;
+    text-align: left;
+    font-size: 20px;
+}
+
+@media only screen and (max-width:700px){
+
+    #content{
+        width: 90vw;
+    }
+
+    #grid_container{
+
+        grid-template-columns: 90%;
+       
+    }
+    .item{
+
+   flex-direction: column;
+   padding: 10px;
+   
+    }
+    .food_img{
+        height: 40vw;
+    }
+    .details{
+        padding-top: 10px;
+    }
+
+
+}
